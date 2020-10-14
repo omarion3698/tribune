@@ -9,11 +9,16 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
 import os
 import django_heroku
 import dj_database_url
 from decouple import config,Csv
+
+EMAIL_USE_TLS = config('EMAIL_USE_TLS')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
@@ -61,6 +66,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # 'news',
     'bootstrap3',
+    'tinymce',
     'news.apps.NewsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
