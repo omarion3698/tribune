@@ -49,7 +49,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kdb4(+z6m4b5q_@70(5qlujg5*^d(#u1_6mgra5k_zy50(yfe8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -106,15 +105,6 @@ WSGI_APPLICATION = 'tribune.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tribune',
-        'USER': 'omarion',
-        'PASSWORD':'29903299',
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
