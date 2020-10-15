@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     # 'news',
     'bootstrap3',
     'tinymce',
+    # 'pipenv',
     'news.apps.NewsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
