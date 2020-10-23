@@ -40,9 +40,11 @@
     <h2 class="text-center">There No News Items</h2>
   </div>
   {% endfor %}
-
-
-
 </div>
+<!--Some content up here-->
+{% endblock %}
 
+<!--End of the block content-->
+{% block scripts %} {{block.super}}
+  <script type="text/javascript" src="{%static 'js/newsletter.js'%}"></script>
 {% endblock %}
